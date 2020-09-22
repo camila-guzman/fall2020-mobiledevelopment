@@ -1,12 +1,12 @@
 // Component is the parent
 class Component {
-  constructor (props) {
+  constructor(props) {
     this.props = props;
   }
 
-  render () {
+  render() {
     // Child objects define their own render() methods
   }
 }
 
-export default Component;
+module.exports = Component;
