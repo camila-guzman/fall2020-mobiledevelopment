@@ -7,10 +7,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Running />
+        <div className="App-nav">
+          <nav>
+            <a href="#DisplayStairs">Stair Tracker</a>
+            <a href="#DisplayRun">Mile Tracker</a>
+          </nav>
+        </div>
+
+        <div className="App-body">
           <Stairs />
-        </header>
+          <Running />
+        </div>
       </div>
     );
   }
