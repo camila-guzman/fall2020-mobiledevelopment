@@ -7,8 +7,8 @@ export default function App() {
     <View style={styles.container}>
       <Card>
         <Card.Title>Camila</Card.Title>
-        <Text>#1 Favorite Food: New York Style Cheesecake</Text>
-        <Text>#2 Favorite Food: Coconut Curry</Text>
+        <Text>#1 Favorite Food: New York Style Cheesecake.</Text>
+        <Text>#2 Favorite Food: Coconut Curry.</Text>
         <Button title="SUBMIT"></Button>
       </Card>
     </View>
