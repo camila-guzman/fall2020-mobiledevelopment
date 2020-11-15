@@ -33,7 +33,6 @@ export default function App() {
           <Text style={styles.text}>Vote for the best flavor of tea!</Text>
 
           <Button
-            style={styles.Button}
             title="Chai"
             onPress={() => displayChaiTea()}
           ></Button>
@@ -64,8 +63,5 @@ const styles = StyleSheet.create({
   textTea: {
     color: "#fff",
     fontSize: "20px",
-  },
-  Button: {
-    color: "yellow",
   },
 });
