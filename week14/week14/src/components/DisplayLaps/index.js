@@ -1,7 +1,7 @@
 import React from "react";
 
 function DisplayLaps(props) {
-  return <p>{props.currentState.count}</p>;
+  return <h3>Total Laps: {props.currentState.count}</h3>;
 }
 
 export default DisplayLaps;
