@@ -2,6 +2,7 @@ import React, { useReducer } from "react";
 import { state, reducer } from "./components/AppState";
 
 import IncreaseLaps from "./components/IncreaseLaps";
+import DecreaseLaps from "./components/DecreaseLaps";
 import ResetLaps from "./components/ResetLaps";
 import DisplayLaps from "./components/DisplayLaps";
 import GoalReached from "./components/GoalReached";
@@ -18,14 +19,20 @@ function App() {
     <div className="App">
       <header className="App-header">Track Your Miles!</header>
       <div className="laps-div">
-        <IncreaseLaps dispatch={dispatch} />
         <DisplayLaps currentState={currentState} />
-        <ResetLaps dispatch={dispatch} />
+        <div className="buttons-div">
+          <IncreaseLaps className="small-btn" dispatch={dispatch} />
+          <DecreaseLaps className="small-btn" dispatch={dispatch} />
+          <ResetLaps className="reset-button" dispatch={dispatch} />
+        </div>
       </div>
       <div className="goal-div">
-        <GoalReached dispatch={dispatch} />
+        <h3>Did You Reach Your Goal Today?</h3>
+        <div className="buttons-div">
+          <GoalReached className="small-btn" dispatch={dispatch} />
+          <GoalNotReached className="small-btn" dispatch={dispatch} />
+        </div>
         <DisplayGoal currentState={currentState} />
-        <GoalNotReached dispatch={dispatch} />
       </div>
     </div>
   );
