@@ -1,0 +1,12 @@
+{
+  "name": "able-sisters",
+  "displayName": "able-sisters",
+  "expo": {
+    "name": "able-sisters",
+    "slug": "able-sisters",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
